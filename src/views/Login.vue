@@ -8,7 +8,8 @@
         <div class="btn-login">
             <button>Login</button>
         </div>
-        <p> You don't have an account here?<a href="">Create an account</a></p>
+        <p> You don't have an account here?
+            <span><router-link to='/register'>Create an account</router-link></span></p>
     </div>
 </template>
 <script>
