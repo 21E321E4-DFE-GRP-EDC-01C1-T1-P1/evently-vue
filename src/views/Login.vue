@@ -18,7 +18,11 @@ export default {
     data(){
         return{};
     },
-    method: {}
+    methods: {
+        login: function(){
+            this.$router.replace("home");
+        }
+    }
 };
 </script>
 <style scoped></style>
