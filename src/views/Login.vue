@@ -8,7 +8,7 @@
         <div class="btn-login">
             <button>Login</button>
         </div>
-        <p>Sorry, you don't have an account here</p>
+        <p> You don't have an account here?<a href="">Create an account</a></p>
     </div>
 </template>
 <script>
