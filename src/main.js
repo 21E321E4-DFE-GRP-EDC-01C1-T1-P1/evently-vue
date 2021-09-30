@@ -1,7 +1,7 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
-import { initializeApp } from 'firebase/app';
+import { createApp } from 'vue';
+import App from './App.vue';
+import router from './router';
+import firebase from 'firebase';
 
 createApp(App).use(router).mount('#app')
 
@@ -14,4 +14,4 @@ const firebaseConfig = {
   appId: "1:736198572993:web:d5fc1ef740c52b270c0d40"
 };
 
-initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
