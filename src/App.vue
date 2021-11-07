@@ -13,8 +13,12 @@
           <q-tab>
             <router-link class="text-weight-bold text-white" to="/">Home</router-link>
           </q-tab>
-          <q-tab name="tab2" label="Tab 2" />
-          <q-tab name="tab3" label="Tab 3" />
+          <q-tab>
+            <router-link class="text-weight-bold text-white" to="/eventos">Eventos</router-link>
+          </q-tab>
+          <q-tab>
+            <router-link class="text-weight-bold text-white" to="/about">Sobre</router-link>
+          </q-tab>
         </q-tabs>
       </q-toolbar>
     </q-header>
