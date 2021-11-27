@@ -1,10 +1,12 @@
 <template>
-  <router-view />
+  <h2>Home</h2>
 </template>
+
 <script>
-import { defineComponent } from 'vue';
+
+import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'App'
+  name: 'Home'
 })
 </script>
