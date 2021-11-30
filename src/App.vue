@@ -1,16 +1,18 @@
 <template>
-  <q-layout view="hHh lpR fFf">
+  <q-layout view="lHh lpr lFf" class="shadow-2">
     <!-- HEADER -->
-    <q-header elevated class="text-white bg-primary" height-hint="98">
+    <q-header elevated class="text-white bg-teal-4" height-hint="98">
       <q-toolbar class="shadow-2 rounded-borders">
-        <q-btn flat label="Evently" @click="() => this.$router.push({name: 'Home'})" />
+        <q-toolbar-title class="text-weight-bold text-h5">
+          Evently
+        </q-toolbar-title>
         <q-space />
 
         <!--
         notice shrink property since we are placing it
         as child of QToolbar
       -->
-        <q-tabs v-model="tab" shrink>
+        <q-tabs shrink>
           <q-tab>
             <router-link class="text-white text-weight-bold" to="/">
               Home

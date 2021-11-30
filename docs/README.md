@@ -19,8 +19,8 @@
   - [x] json server
 - [ ] ~~Responsivo~~
 - [ ] Rotas
-- [ ] 404
+- [x] 404
 - [ ] State
-- [ ] Validação do HTML (extensão Wave)
-- [ ] HTML ally com aria roles
+- [ ] ~~Validação do HTML (extensão Wave)~~
+- [ ] ~~HTML ally com aria roles~~
 

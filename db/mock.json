@@ -4,7 +4,13 @@
       "id": "1",
       "name": "Ciclismo",
       "maxParticipants": 5,
-      "participants": [18, 14, 8, 21, 25],
+      "participants": [
+        18,
+        14,
+        8,
+        21,
+        25
+      ],
       "startTime": "Sun Nov 28 2021 17:20:00 GMT-0300 (Horário Padrão de Brasília)",
       "endTime": "Sun Dec 28 2021 20:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "createdBy": 13,
@@ -14,7 +20,13 @@
       "id": "2",
       "name": "Encontro do Clube de Leitura Dom Casmurro",
       "maxParticipants": 20,
-      "participants": [18, 11, 24, 17, 12],
+      "participants": [
+        18,
+        11,
+        24,
+        17,
+        12
+      ],
       "startTime": "Sun Nov 28 2021 17:20:00 GMT-0300 (Horário Padrão de Brasília)",
       "endTime": "Sun Dec 28 2021 20:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "createdBy": 5,
@@ -24,7 +36,13 @@
       "id": "3",
       "name": "Sessão Cinema Clássico: Laranja Mecânica",
       "maxParticipants": 10,
-      "participants": [22, 18, 12, 8, 5],
+      "participants": [
+        22,
+        18,
+        12,
+        8,
+        5
+      ],
       "startTime": "Sun Nov 28 2021 17:20:00 GMT-0300 (Horário Padrão de Brasília)",
       "endTime": "Sun Dec 28 2021 20:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "createdBy": 21,
@@ -34,7 +52,13 @@
       "id": "4",
       "name": "Encontro Clube de Xadrez",
       "maxParticipants": 14,
-      "participants": [19, 10, 18, 8, 11],
+      "participants": [
+        19,
+        10,
+        18,
+        8,
+        11
+      ],
       "startTime": "Sun Nov 28 2021 17:20:00 GMT-0300 (Horário Padrão de Brasília)",
       "endTime": "Sun Dec 28 2021 20:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "createdBy": 20,
@@ -44,7 +68,13 @@
       "id": "5",
       "name": "Exercício ao Ar Livre (YOGA)",
       "maxParticipants": 16,
-      "participants": [6, 9, 6, 23, 20],
+      "participants": [
+        6,
+        9,
+        6,
+        23,
+        20
+      ],
       "startTime": "Sun Nov 28 2021 17:20:00 GMT-0300 (Horário Padrão de Brasília)",
       "endTime": "Sun Dec 28 2021 20:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "createdBy": 9,
@@ -54,7 +84,13 @@
       "id": "6",
       "name": "Pelada na Praia (Futvôlei)",
       "maxParticipants": 8,
-      "participants": [10, 11, 20, 16, 5],
+      "participants": [
+        10,
+        11,
+        20,
+        16,
+        5
+      ],
       "startTime": "Sun Nov 28 2021 17:20:00 GMT-0300 (Horário Padrão de Brasília)",
       "endTime": "Sun Dec 28 2021 20:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "createdBy": 8,
@@ -64,7 +100,13 @@
       "id": "7",
       "name": "Banda Fulgaz (SHOW ao VIVO)",
       "maxParticipants": 24,
-      "participants": [13, 8, 13, 10, 12],
+      "participants": [
+        13,
+        8,
+        13,
+        10,
+        12
+      ],
       "startTime": "Sun Nov 28 2021 17:20:00 GMT-0300 (Horário Padrão de Brasília)",
       "endTime": "Sun Dec 28 2021 20:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "createdBy": 9,
@@ -74,7 +116,13 @@
       "id": "8",
       "name": "Aplauso ao Sol",
       "maxParticipants": 21,
-      "participants": [21, 25, 21, 9, 7],
+      "participants": [
+        21,
+        25,
+        21,
+        9,
+        7
+      ],
       "startTime": "Sun Nov 28 2021 17:20:00 GMT-0300 (Horário Padrão de Brasília)",
       "endTime": "Sun Dec 28 2021 20:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "createdBy": 21,
@@ -84,7 +132,13 @@
       "id": "9",
       "name": "Crossfit Aula Experimental",
       "maxParticipants": 6,
-      "participants": [18, 7, 12, 6, 14],
+      "participants": [
+        18,
+        7,
+        12,
+        6,
+        14
+      ],
       "startTime": "Sun Nov 28 2021 17:20:00 GMT-0300 (Horário Padrão de Brasília)",
       "endTime": "Sun Dec 28 2021 20:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "createdBy": 25,
@@ -94,7 +148,13 @@
       "id": "10",
       "name": "Protesto em frente à Câmara Municipal",
       "maxParticipants": 25,
-      "participants": [19, 10, 8, 16, 8],
+      "participants": [
+        19,
+        10,
+        8,
+        16,
+        8
+      ],
       "startTime": "Sun Nov 28 2021 17:20:00 GMT-0300 (Horário Padrão de Brasília)",
       "endTime": "Sun Dec 28 2021 20:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "createdBy": 14,
@@ -276,6 +336,13 @@
       "lastname": "Fisher",
       "email": "cherryfisher@zanymax.com",
       "password": "61a3e821e140cb8d2dce4c01"
+    },
+    {
+      "firstname": "Daniel",
+      "lastname": "Spinola",
+      "email": "test@email.com",
+      "password": 123,
+      "id": 26
     }
   ]
 }

@@ -6,9 +6,6 @@
 export default {
   name: "Home",
   created() {
-    if (!this.$store.state.currentUser) {
-      this.$router.replace({/* Login */})
-    }
   }
 }
 </script>
