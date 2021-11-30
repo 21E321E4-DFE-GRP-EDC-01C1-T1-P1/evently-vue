@@ -57,10 +57,10 @@ import { defineComponent } from 'vue';
 export default defineComponent({
   name: 'Login',
   data(){
-        return{
-            email:'',
-            password:''
-        };
+      return{
+        email:'',
+        password:''
+      };
     },
 })
 </script>
