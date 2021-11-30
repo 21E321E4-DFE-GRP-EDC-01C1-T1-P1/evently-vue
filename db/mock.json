@@ -1,0 +1,281 @@
+{
+  "events": [
+    {
+      "id": "1",
+      "name": "Ciclismo",
+      "maxParticipants": 5,
+      "participants": [18, 14, 8, 21, 25],
+      "startTime": "Sun Nov 28 2021 17:20:00 GMT-0300 (Horário Padrão de Brasília)",
+      "endTime": "Sun Dec 28 2021 20:00:00 GMT-0300 (Horário Padrão de Brasília)",
+      "createdBy": 13,
+      "location": "605 Harwood Place, Bartonsville, American Samoa, 3882"
+    },
+    {
+      "id": "2",
+      "name": "Encontro do Clube de Leitura Dom Casmurro",
+      "maxParticipants": 20,
+      "participants": [18, 11, 24, 17, 12],
+      "startTime": "Sun Nov 28 2021 17:20:00 GMT-0300 (Horário Padrão de Brasília)",
+      "endTime": "Sun Dec 28 2021 20:00:00 GMT-0300 (Horário Padrão de Brasília)",
+      "createdBy": 5,
+      "location": "915 Willoughby Avenue, Bridgetown, Maine, 6984"
+    },
+    {
+      "id": "3",
+      "name": "Sessão Cinema Clássico: Laranja Mecânica",
+      "maxParticipants": 10,
+      "participants": [22, 18, 12, 8, 5],
+      "startTime": "Sun Nov 28 2021 17:20:00 GMT-0300 (Horário Padrão de Brasília)",
+      "endTime": "Sun Dec 28 2021 20:00:00 GMT-0300 (Horário Padrão de Brasília)",
+      "createdBy": 21,
+      "location": "566 Auburn Place, Morgandale, Wyoming, 241"
+    },
+    {
+      "id": "4",
+      "name": "Encontro Clube de Xadrez",
+      "maxParticipants": 14,
+      "participants": [19, 10, 18, 8, 11],
+      "startTime": "Sun Nov 28 2021 17:20:00 GMT-0300 (Horário Padrão de Brasília)",
+      "endTime": "Sun Dec 28 2021 20:00:00 GMT-0300 (Horário Padrão de Brasília)",
+      "createdBy": 20,
+      "location": "488 Evans Street, Eureka, Alabama, 8599"
+    },
+    {
+      "id": "5",
+      "name": "Exercício ao Ar Livre (YOGA)",
+      "maxParticipants": 16,
+      "participants": [6, 9, 6, 23, 20],
+      "startTime": "Sun Nov 28 2021 17:20:00 GMT-0300 (Horário Padrão de Brasília)",
+      "endTime": "Sun Dec 28 2021 20:00:00 GMT-0300 (Horário Padrão de Brasília)",
+      "createdBy": 9,
+      "location": "756 Graham Avenue, Monument, Guam, 2662"
+    },
+    {
+      "id": "6",
+      "name": "Pelada na Praia (Futvôlei)",
+      "maxParticipants": 8,
+      "participants": [10, 11, 20, 16, 5],
+      "startTime": "Sun Nov 28 2021 17:20:00 GMT-0300 (Horário Padrão de Brasília)",
+      "endTime": "Sun Dec 28 2021 20:00:00 GMT-0300 (Horário Padrão de Brasília)",
+      "createdBy": 8,
+      "location": "128 Schroeders Avenue, Dalton, Maryland, 8745"
+    },
+    {
+      "id": "7",
+      "name": "Banda Fulgaz (SHOW ao VIVO)",
+      "maxParticipants": 24,
+      "participants": [13, 8, 13, 10, 12],
+      "startTime": "Sun Nov 28 2021 17:20:00 GMT-0300 (Horário Padrão de Brasília)",
+      "endTime": "Sun Dec 28 2021 20:00:00 GMT-0300 (Horário Padrão de Brasília)",
+      "createdBy": 9,
+      "location": "160 Grace Court, Allensworth, Louisiana, 5666"
+    },
+    {
+      "id": "8",
+      "name": "Aplauso ao Sol",
+      "maxParticipants": 21,
+      "participants": [21, 25, 21, 9, 7],
+      "startTime": "Sun Nov 28 2021 17:20:00 GMT-0300 (Horário Padrão de Brasília)",
+      "endTime": "Sun Dec 28 2021 20:00:00 GMT-0300 (Horário Padrão de Brasília)",
+      "createdBy": 21,
+      "location": "449 Grattan Street, Skyland, Virgin Islands, 6801"
+    },
+    {
+      "id": "9",
+      "name": "Crossfit Aula Experimental",
+      "maxParticipants": 6,
+      "participants": [18, 7, 12, 6, 14],
+      "startTime": "Sun Nov 28 2021 17:20:00 GMT-0300 (Horário Padrão de Brasília)",
+      "endTime": "Sun Dec 28 2021 20:00:00 GMT-0300 (Horário Padrão de Brasília)",
+      "createdBy": 25,
+      "location": "519 Dahlgreen Place, Brutus, Virginia, 8480"
+    },
+    {
+      "id": "10",
+      "name": "Protesto em frente à Câmara Municipal",
+      "maxParticipants": 25,
+      "participants": [19, 10, 8, 16, 8],
+      "startTime": "Sun Nov 28 2021 17:20:00 GMT-0300 (Horário Padrão de Brasília)",
+      "endTime": "Sun Dec 28 2021 20:00:00 GMT-0300 (Horário Padrão de Brasília)",
+      "createdBy": 14,
+      "location": "637 Hegeman Avenue, Corinne, Puerto Rico, 2213"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "firstname": "Horn",
+      "lastname": "Reese",
+      "email": "hornreese@zanymax.com",
+      "password": "61a3e8213698b60e534ee28f"
+    },
+    {
+      "id": 2,
+      "firstname": "Stefanie",
+      "lastname": "Roberts",
+      "email": "stefanieroberts@zanymax.com",
+      "password": "61a3e821c92ad24223a2f8d2"
+    },
+    {
+      "id": 3,
+      "firstname": "Augusta",
+      "lastname": "Aguilar",
+      "email": "augustaaguilar@zanymax.com",
+      "password": "61a3e821ae3cb8ccf8ff6043"
+    },
+    {
+      "id": 4,
+      "firstname": "Rose",
+      "lastname": "Mcclure",
+      "email": "rosemcclure@zanymax.com",
+      "password": "61a3e821f90521a0c7491d95"
+    },
+    {
+      "id": 5,
+      "firstname": "Shields",
+      "lastname": "Cunningham",
+      "email": "shieldscunningham@zanymax.com",
+      "password": "61a3e821b503013fec569e27"
+    },
+    {
+      "id": 6,
+      "firstname": "Karin",
+      "lastname": "Fernandez",
+      "email": "karinfernandez@zanymax.com",
+      "password": "61a3e8210e7261fb1d635af7"
+    },
+    {
+      "id": 7,
+      "firstname": "Kirsten",
+      "lastname": "Mcbride",
+      "email": "kirstenmcbride@zanymax.com",
+      "password": "61a3e8216951d7d6fe739202"
+    },
+    {
+      "id": 8,
+      "firstname": "Ina",
+      "lastname": "Drake",
+      "email": "inadrake@zanymax.com",
+      "password": "61a3e82155478e019d0d6a6e"
+    },
+    {
+      "id": 9,
+      "firstname": "Sondra",
+      "lastname": "Wooten",
+      "email": "sondrawooten@zanymax.com",
+      "password": "61a3e8213520a84aa1aff9f2"
+    },
+    {
+      "id": 10,
+      "firstname": "Doyle",
+      "lastname": "Avila",
+      "email": "doyleavila@zanymax.com",
+      "password": "61a3e821860b9f2cc229a42f"
+    },
+    {
+      "id": 11,
+      "firstname": "Jody",
+      "lastname": "Franks",
+      "email": "jodyfranks@zanymax.com",
+      "password": "61a3e82117b170bb762ce680"
+    },
+    {
+      "id": 12,
+      "firstname": "Valerie",
+      "lastname": "Waters",
+      "email": "valeriewaters@zanymax.com",
+      "password": "61a3e8212f44d4eb848a4491"
+    },
+    {
+      "id": 13,
+      "firstname": "Hawkins",
+      "lastname": "Pace",
+      "email": "hawkinspace@zanymax.com",
+      "password": "61a3e8219738365ed649c24e"
+    },
+    {
+      "id": 14,
+      "firstname": "Levy",
+      "lastname": "Dawson",
+      "email": "levydawson@zanymax.com",
+      "password": "61a3e821ebf69161ae3df888"
+    },
+    {
+      "id": 15,
+      "firstname": "Hickman",
+      "lastname": "Randolph",
+      "email": "hickmanrandolph@zanymax.com",
+      "password": "61a3e8213246dc576c36e545"
+    },
+    {
+      "id": 16,
+      "firstname": "Rachael",
+      "lastname": "Mcleod",
+      "email": "rachaelmcleod@zanymax.com",
+      "password": "61a3e8210616a6f8687fc37b"
+    },
+    {
+      "id": 17,
+      "firstname": "Marcia",
+      "lastname": "Levy",
+      "email": "marcialevy@zanymax.com",
+      "password": "61a3e821af81e9e8664da9c2"
+    },
+    {
+      "id": 18,
+      "firstname": "Pugh",
+      "lastname": "Hammond",
+      "email": "pughhammond@zanymax.com",
+      "password": "61a3e821bf8db88672aa5af1"
+    },
+    {
+      "id": 19,
+      "firstname": "Sandy",
+      "lastname": "Mullen",
+      "email": "sandymullen@zanymax.com",
+      "password": "61a3e821daefd9785d0ff4ce"
+    },
+    {
+      "id": 20,
+      "firstname": "Serena",
+      "lastname": "Bullock",
+      "email": "serenabullock@zanymax.com",
+      "password": "61a3e821bccf5da4bdf861dc"
+    },
+    {
+      "id": 21,
+      "firstname": "Bullock",
+      "lastname": "Faulkner",
+      "email": "bullockfaulkner@zanymax.com",
+      "password": "61a3e821eb31b4909120f711"
+    },
+    {
+      "id": 22,
+      "firstname": "Cooke",
+      "lastname": "Finch",
+      "email": "cookefinch@zanymax.com",
+      "password": "61a3e8215cb431bd0538e6e0"
+    },
+    {
+      "id": 23,
+      "firstname": "Pollard",
+      "lastname": "Middleton",
+      "email": "pollardmiddleton@zanymax.com",
+      "password": "61a3e82178aa200fcfbfbfb8"
+    },
+    {
+      "id": 24,
+      "firstname": "Freida",
+      "lastname": "Leach",
+      "email": "freidaleach@zanymax.com",
+      "password": "61a3e8211fb5960c5ff20905"
+    },
+    {
+      "id": 25,
+      "firstname": "Cherry",
+      "lastname": "Fisher",
+      "email": "cherryfisher@zanymax.com",
+      "password": "61a3e821e140cb8d2dce4c01"
+    }
+  ]
+}
