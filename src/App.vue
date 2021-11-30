@@ -1,8 +1,9 @@
 <template>
   <q-layout view="hHh lpR fFf">
-    <q-header elevated class="bg-primary text-white" height-hint="98">
+    <!-- HEADER -->
+    <q-header elevated class="text-white bg-primary" height-hint="98">
       <q-toolbar class="shadow-2 rounded-borders">
-        <q-btn flat label="Homepage" />
+        <q-btn flat label="Evently" @click="() => this.$router.push({name: 'Home'})" />
         <q-space />
 
         <!--
@@ -11,23 +12,31 @@
       -->
         <q-tabs v-model="tab" shrink>
           <q-tab>
-            <router-link class="text-weight-bold text-white" to="/">Home</router-link>
+            <router-link class="text-white text-weight-bold" to="/">
+              Home
+            </router-link>
           </q-tab>
           <q-tab>
-            <router-link class="text-weight-bold text-white" to="/eventos">Eventos</router-link>
+            <router-link class="text-white text-weight-bold" to="/eventos">
+              Eventos
+            </router-link>
           </q-tab>
           <q-tab>
-            <router-link class="text-weight-bold text-white" to="/about">Sobre</router-link>
+            <router-link class="text-white text-weight-bold" to="/about">
+              Sobre
+            </router-link>
           </q-tab>
         </q-tabs>
       </q-toolbar>
     </q-header>
 
+    <!-- CONTENT -->
     <q-page-container>
       <router-view />
     </q-page-container>
 
-    <q-footer elevated class="bg-grey-8 text-white">
+    <!-- FOOTER -->
+    <!-- <q-footer elevated class="text-white bg-grey-8">
       <q-toolbar>
         <q-toolbar-title>
           <q-avatar>
@@ -36,7 +45,7 @@
           <div>Title</div>
         </q-toolbar-title>
       </q-toolbar>
-    </q-footer>
+    </q-footer> -->
   </q-layout>
 </template>
 

@@ -5,6 +5,10 @@
 <script>
 export default {
   name: "Home",
-  components: {},
-};
+  created() {
+    if (!this.$store.state.currentUser) {
+      this.$router.replace({/* Login */})
+    }
+  }
+}
 </script>
