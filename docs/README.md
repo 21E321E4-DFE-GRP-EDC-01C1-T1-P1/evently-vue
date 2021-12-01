@@ -2,9 +2,9 @@
 
 ## Projeto
 - [ ] Home
-- [x] Eventos
-- [ ] Login
-- [ ] Cadastro
+- [ ] Eventos
+- [x] Login
+- [x] Cadastro
 - [ ] Perfil
 - [ ] Evento
   - [ ] Create
@@ -14,13 +14,13 @@
 - [ ] Sobre
 
 ## AT
-- [ ] Autenticação
-- [ ] API
+- [x] Autenticação
+- [x] API
   - [x] json server
 - [ ] ~~Responsivo~~
-- [ ] Rotas
+- [x] Rotas
 - [x] 404
-- [ ] State
+- [x] State
 - [ ] ~~Validação do HTML (extensão Wave)~~
 - [ ] ~~HTML ally com aria roles~~
 

@@ -164,185 +164,165 @@
   "users": [
     {
       "id": 1,
-      "firstname": "Horn",
-      "lastname": "Reese",
+      "name": "Horn",
       "email": "hornreese@zanymax.com",
       "password": "61a3e8213698b60e534ee28f"
     },
     {
       "id": 2,
-      "firstname": "Stefanie",
-      "lastname": "Roberts",
+      "name": "Stefanie",
       "email": "stefanieroberts@zanymax.com",
       "password": "61a3e821c92ad24223a2f8d2"
     },
     {
       "id": 3,
-      "firstname": "Augusta",
-      "lastname": "Aguilar",
+      "name": "Augusta",
       "email": "augustaaguilar@zanymax.com",
       "password": "61a3e821ae3cb8ccf8ff6043"
     },
     {
       "id": 4,
-      "firstname": "Rose",
-      "lastname": "Mcclure",
+      "name": "Rose",
       "email": "rosemcclure@zanymax.com",
       "password": "61a3e821f90521a0c7491d95"
     },
     {
       "id": 5,
-      "firstname": "Shields",
-      "lastname": "Cunningham",
+      "name": "Shields",
       "email": "shieldscunningham@zanymax.com",
       "password": "61a3e821b503013fec569e27"
     },
     {
       "id": 6,
-      "firstname": "Karin",
-      "lastname": "Fernandez",
+      "name": "Karin",
       "email": "karinfernandez@zanymax.com",
       "password": "61a3e8210e7261fb1d635af7"
     },
     {
       "id": 7,
-      "firstname": "Kirsten",
-      "lastname": "Mcbride",
+      "name": "Kirsten",
       "email": "kirstenmcbride@zanymax.com",
       "password": "61a3e8216951d7d6fe739202"
     },
     {
       "id": 8,
-      "firstname": "Ina",
-      "lastname": "Drake",
+      "name": "Ina",
       "email": "inadrake@zanymax.com",
       "password": "61a3e82155478e019d0d6a6e"
     },
     {
       "id": 9,
-      "firstname": "Sondra",
-      "lastname": "Wooten",
+      "name": "Sondra",
       "email": "sondrawooten@zanymax.com",
       "password": "61a3e8213520a84aa1aff9f2"
     },
     {
       "id": 10,
-      "firstname": "Doyle",
-      "lastname": "Avila",
+      "name": "Doyle",
       "email": "doyleavila@zanymax.com",
       "password": "61a3e821860b9f2cc229a42f"
     },
     {
       "id": 11,
-      "firstname": "Jody",
-      "lastname": "Franks",
+      "name": "Jody",
       "email": "jodyfranks@zanymax.com",
       "password": "61a3e82117b170bb762ce680"
     },
     {
       "id": 12,
-      "firstname": "Valerie",
-      "lastname": "Waters",
+      "name": "Valerie",
       "email": "valeriewaters@zanymax.com",
       "password": "61a3e8212f44d4eb848a4491"
     },
     {
       "id": 13,
-      "firstname": "Hawkins",
-      "lastname": "Pace",
+      "name": "Hawkins",
       "email": "hawkinspace@zanymax.com",
       "password": "61a3e8219738365ed649c24e"
     },
     {
       "id": 14,
-      "firstname": "Levy",
-      "lastname": "Dawson",
+      "name": "Levy",
       "email": "levydawson@zanymax.com",
       "password": "61a3e821ebf69161ae3df888"
     },
     {
       "id": 15,
-      "firstname": "Hickman",
-      "lastname": "Randolph",
+      "name": "Hickman",
       "email": "hickmanrandolph@zanymax.com",
       "password": "61a3e8213246dc576c36e545"
     },
     {
       "id": 16,
-      "firstname": "Rachael",
-      "lastname": "Mcleod",
+      "name": "Rachael",
       "email": "rachaelmcleod@zanymax.com",
       "password": "61a3e8210616a6f8687fc37b"
     },
     {
       "id": 17,
-      "firstname": "Marcia",
-      "lastname": "Levy",
+      "name": "Marcia",
       "email": "marcialevy@zanymax.com",
       "password": "61a3e821af81e9e8664da9c2"
     },
     {
       "id": 18,
-      "firstname": "Pugh",
-      "lastname": "Hammond",
+      "name": "Pugh",
       "email": "pughhammond@zanymax.com",
       "password": "61a3e821bf8db88672aa5af1"
     },
     {
       "id": 19,
-      "firstname": "Sandy",
-      "lastname": "Mullen",
+      "name": "Sandy",
       "email": "sandymullen@zanymax.com",
       "password": "61a3e821daefd9785d0ff4ce"
     },
     {
       "id": 20,
-      "firstname": "Serena",
-      "lastname": "Bullock",
+      "name": "Serena",
       "email": "serenabullock@zanymax.com",
       "password": "61a3e821bccf5da4bdf861dc"
     },
     {
       "id": 21,
-      "firstname": "Bullock",
-      "lastname": "Faulkner",
+      "name": "Bullock",
       "email": "bullockfaulkner@zanymax.com",
       "password": "61a3e821eb31b4909120f711"
     },
     {
       "id": 22,
-      "firstname": "Cooke",
-      "lastname": "Finch",
+      "name": "Cooke",
       "email": "cookefinch@zanymax.com",
       "password": "61a3e8215cb431bd0538e6e0"
     },
     {
       "id": 23,
-      "firstname": "Pollard",
-      "lastname": "Middleton",
+      "name": "Pollard",
       "email": "pollardmiddleton@zanymax.com",
       "password": "61a3e82178aa200fcfbfbfb8"
     },
     {
       "id": 24,
-      "firstname": "Freida",
-      "lastname": "Leach",
+      "name": "Freida",
       "email": "freidaleach@zanymax.com",
       "password": "61a3e8211fb5960c5ff20905"
     },
     {
       "id": 25,
-      "firstname": "Cherry",
-      "lastname": "Fisher",
+      "name": "Cherry",
       "email": "cherryfisher@zanymax.com",
       "password": "61a3e821e140cb8d2dce4c01"
     },
     {
-      "firstname": "Daniel",
-      "lastname": "Spinola",
+      "name": "Daniel",
       "email": "test@email.com",
       "password": 123,
       "id": 26
+    },
+    {
+      "name": "Daniel",
+      "email": "daniel.trindade@al.infnet.edu.br",
+      "password": "123",
+      "id": 27
     }
   ]
 }

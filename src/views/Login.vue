@@ -2,7 +2,7 @@
   <div>
     <div class="row">
       <div class="col-6 col-md-4 q-mx-auto q-my-xl">
-        <div class="q-pa-md" style="max-width: 400px">
+        <div class="q-pt-md" >
           <q-form
             @submit.prevent="onSubmit"
             @reset="onReset"
@@ -22,11 +22,10 @@
               required
             />
             <q-input
-              label="Password"
+              label="Senha"
               v-model="password"
               filled
               :type="isPwd ? 'password' : 'text'"
-              hint="Password with toggle"
               required
             >
               <template v-slot:append>
@@ -46,15 +45,15 @@
             </p>
 
             <div class="text-center">
-              <q-btn label="Submit" type="submit" color="primary" />
+              <q-btn label="Entrar" type="submit" color="primary" />
             </div>
             <div class="text-center">
               <q-btn
                 flat
-                to="/create"
+                to="/register"
                 color="primary"
                 class="text-center q-ml-sm text-weight-bolder text-caption"
-                label=" Crie uma conta"
+                label="Crie uma conta"
               />
             </div>
           </q-form>

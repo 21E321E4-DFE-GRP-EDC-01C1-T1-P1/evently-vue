@@ -3,6 +3,7 @@ import Home from "../views/Home.vue";
 import Eventos from "../views/Eventos.vue";
 import About from "../views/About.vue";
 import Login from "../views/Login.vue";
+import Register from "../views/Register.vue";
 import Missing from "../views/Missing.vue";
 
 const routes = [
@@ -30,6 +31,11 @@ const routes = [
     name: "login",
     component: Login,
   },
+  {
+    path: "/register",
+    name: "register",
+    component: Register,
+  },
   // WARNING: As rotas abaixo devem sempre ser as últimas!
   {
     path: "/:pathMatch(.*)",
@@ -50,10 +56,12 @@ const router = createRouter({
 /* eslint-disable */
 // GUARDS
 router.beforeResolve((to, from, next) => {
-  let isAuthenticated = require('../store').default.getters.isAuthenticated;
-  if (to.name !== "login" && !isAuthenticated) next({ name: "login" });
-  else if (to.name == "login" && isAuthenticated) next({ name: "home" });
-  else next();
+  let isAuthenticated = require("../store").default.getters.isAuthenticated;
+  if ((to.name !== "login" && to.name !== "register") && !isAuthenticated) {
+    next({ name: "login" });
+  } else if (to.name == "login" && isAuthenticated) {
+    next({ name: "home" });
+  } else next();
 });
 
 export default router;
