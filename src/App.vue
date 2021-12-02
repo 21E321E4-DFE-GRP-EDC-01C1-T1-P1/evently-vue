@@ -14,7 +14,11 @@
       -->
         <q-tabs shrink>
           <q-tab>
-            <router-link class="text-white text-weight-bold" to="/">
+            <router-link
+              to="/"
+              class="text-white text-weight-bold"
+              v-if="this.isAuthenticated()"
+            >
               Home
             </router-link>
           </q-tab>
@@ -26,6 +30,16 @@
           <q-tab>
             <router-link class="text-white text-weight-bold" to="/about">
               Sobre
+            </router-link>
+          </q-tab>
+          <q-tab>
+            <router-link
+              to="/login"
+              class="text-white text-weight-bold"
+              v-if="this.isAuthenticated()"
+              @click.prevent="this.logout()"
+            >
+              Sair
             </router-link>
           </q-tab>
         </q-tabs>
@@ -53,6 +67,7 @@
 
 <script>
 import { ref } from "vue";
+import { mapGetters, mapActions } from "vuex";
 
 export default {
   name: "LayoutDefault",
@@ -63,6 +78,10 @@ export default {
     return {
       leftDrawerOpen: ref(false),
     };
+  },
+  methods: {
+    ...mapGetters(["isAuthenticated"]),
+    ...mapActions(["logout"]),
   },
 };
 </script>

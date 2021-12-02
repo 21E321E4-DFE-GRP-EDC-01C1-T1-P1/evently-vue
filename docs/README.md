@@ -1,26 +1,26 @@
 # TODO
 
 ## Projeto
-- [ ] Home
-- [ ] Eventos
+- [x] Home
 - [x] Login
 - [x] Cadastro
-- [ ] Perfil
+- [ ] Perfil (+ Calendário)
 - [ ] Evento
   - [ ] Create
   - [ ] Read (+ Subscribe)
   - [ ] Update
   - [ ] Delete
+  - [ ] List
 - [ ] Sobre
 
 ## AT
 - [x] Autenticação
 - [x] API
   - [x] json server
-- [ ] ~~Responsivo~~
+- ~~[ ] Responsivo~~
 - [x] Rotas
 - [x] 404
 - [x] State
-- [ ] ~~Validação do HTML (extensão Wave)~~
-- [ ] ~~HTML ally com aria roles~~
+- ~~[ ] Validação do HTML (extensão Wave)~~
+- ~~[ ] HTML ally com aria roles~~
 
