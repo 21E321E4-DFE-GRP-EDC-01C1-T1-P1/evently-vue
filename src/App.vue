@@ -13,11 +13,15 @@
         as child of QToolbar
       -->
         <q-tabs shrink>
-          <q-tab>
+          <q-tab v-if="!this.isAuthenticated()">
+            <router-link to="/login" class="text-white text-weight-bold">
+              Login
+            </router-link>
+          </q-tab>
+          <q-tab v-if="this.isAuthenticated()">
             <router-link
               to="/"
               class="text-white text-weight-bold"
-              v-if="this.isAuthenticated()"
             >
               Home
             </router-link>
@@ -32,11 +36,10 @@
               Sobre
             </router-link>
           </q-tab>
-          <q-tab>
+          <q-tab v-if="this.isAuthenticated()">
             <router-link
               to="/login"
               class="text-white text-weight-bold"
-              v-if="this.isAuthenticated()"
               @click.prevent="this.logout()"
             >
               Sair

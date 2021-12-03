@@ -4,13 +4,14 @@
 - [x] Home
 - [x] Login
 - [x] Cadastro
-- [ ] Perfil (+ Calendário)
-- [ ] Evento
+- [ ] Perfil 
+- [ ] Calendário
+- [x] Evento
   - [x] Create
   - [x] Read (+ Subscribe)
   - [x] Update
   - [x] Delete
-  - [ ] List
+  - [x] List
 - [ ] Sobre
 
 ## AT
