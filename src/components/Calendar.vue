@@ -18,7 +18,11 @@
         </thead>
         <tbody id="calendar-body">
           <tr v-for="[k, v] of Object.entries(this.calendar)" :key="k">
-            <td v-for="[q, d] of Object.entries(v)" :key="q">
+            <td
+              v-for="[q, d] of Object.entries(v)"
+              :key="q"
+              @click="viewDate(d)"
+            >
               <div :class="this.getClass(d)">
                 <span>{{ d.date || "" }}</span>
               </div>
@@ -57,10 +61,28 @@
         </select>
       </div>
     </div>
+
+    <q-dialog v-model="modal">
+      <q-card>
+        <q-card-section class="items-center row q-pb-none">
+          <div class="text-h6">Eventos do dia {{this.modalDateInfo.date}} de {{this.longMonth[this.currentMonth]}}</div>
+          <q-space />
+          <q-btn icon="close" flat round dense v-close-popup />
+        </q-card-section>
+
+        <q-card-section v-for="event of this.modalDateInfo.events" :key="event.id">
+          <h3 class="text-h6">{{event.name}}</h3>
+          <p class="">{{event.description}}</p>
+          <q-btn flat class="text-accent" @click="gotoEvent(event.id)">Ir para o evento</q-btn>
+        </q-card-section>
+      </q-card>
+    </q-dialog>
   </div>
 </template>
 
 <script>
+import { ref } from "vue";
+
 export default {
   props: {
     events: {
@@ -69,9 +91,14 @@ export default {
     },
   },
   watch: {
-      events: function() {
-          this.updateCalendar();
-      },
+    events: function () {
+      this.updateCalendar();
+    },
+  },
+  setup() {
+    return {
+      modal: ref(false),
+    };
   },
   created() {
     this.updateCalendar();
@@ -110,6 +137,7 @@ export default {
       ],
       weekDay: ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sab"],
       calendar: [],
+      modalDateInfo: {},
     };
   },
   methods: {
@@ -177,6 +205,13 @@ export default {
     },
     getClass(date) {
       return date.events?.length ? "numberCircle" : date.isToday ? "today" : "";
+    },
+    viewDate(date) {
+      this.modalDateInfo = date;
+      this.modal = true;
+    },
+    gotoEvent(id) {
+      this.$router.push({name: "evento-read", params: {id}});
     },
   },
 };
@@ -285,6 +320,7 @@ body {
   margin: auto;
   text-align: center;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .numberCircle span {

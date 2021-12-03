@@ -168,7 +168,8 @@
       "maxParticipants": "500",
       "participants": [
         null,
-        13
+        13,
+        null
       ],
       "startTime": "2021-12-28 00:00",
       "endTime": "2021-12-31 00:00",
@@ -181,7 +182,6 @@
       "name": "Test",
       "maxParticipants": 5,
       "participants": [
-        13,
         18,
         27,
         1,
