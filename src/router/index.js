@@ -54,6 +54,11 @@ const routes = [
     name: "evento-edit",
     component: CreateEvent,
   },
+  {
+    path: "/perfil",
+    name: "perfil",
+    component: Perfil,
+  },
   // WARNING: As rotas abaixo devem sempre ser as últimas!
   {
     path: "/:pathMatch(.*)",

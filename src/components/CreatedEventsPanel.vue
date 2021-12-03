@@ -3,13 +3,13 @@
     {{ this.myEvents.length ? "Eventos Criados" : "Nenhum evento criado" }}
   </h2>
   <div class="container no-scrollbar">
-    <template v-for="event of this.myEvents" :key="event.id">
-      <EventCard
-        :event="event"
-        @change="this.updateEventList()"
-        class="q-my-xl"
-      />
-    </template>
+    <EventCard
+      v-for="event of this.myEvents"
+      :key="event.id"
+      :event="event"
+      @change="this.updateEventList()"
+      class="q-my-xl"
+    />
   </div>
 </template>
 

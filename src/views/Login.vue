@@ -79,7 +79,6 @@ export default {
     ...mapActions(["login"]),
     async onSubmit() {
       let resp = await this.login({ email: this.email, password: this.password });
-      console.log(resp);
       if (resp) {
         this.$router.replace({name: 'home'});
         return;

@@ -7,7 +7,7 @@ import quasarUserOptions from "./quasar-user-options";
 
 /* eslint-disable */
 createApp(App)
-    .use(Quasar, quasarUserOptions)
-    .use(store)
-    .use(router)
-    .mount("#app");
+  .use(store)
+  .use(router)
+  .use(Quasar, quasarUserOptions)
+  .mount("#app");

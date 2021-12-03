@@ -26,12 +26,20 @@
               Home
             </router-link>
           </q-tab>
+          <q-tab class="gt-xs" v-if="this.isAuthenticated()">
+            <router-link
+              to="/perfil"
+              class="text-white text-weight-bold"
+            >
+              Perfil
+            </router-link>
+          </q-tab>
           <q-tab>
             <router-link class="text-white text-weight-bold" to="/eventos">
               Eventos
             </router-link>
           </q-tab>
-          <q-tab>
+          <q-tab v-if="false">
             <router-link class="text-white text-weight-bold" to="/about">
               Sobre
             </router-link>
