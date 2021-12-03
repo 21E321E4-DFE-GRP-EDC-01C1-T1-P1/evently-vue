@@ -1,38 +1,76 @@
 <template>
-  <q-layout view="hHh lpR fFf">
-    <q-header elevated class="bg-primary text-white" height-hint="98">
-      <q-toolbar class="rounded-borders" style="background-color:aquamarine">
+  <q-layout view="lHh lpr lFf" class="shadow-2">
+    <!-- HEADER -->
+    <q-header elevated class="text-white bg-teal-4" height-hint="98">
+      <q-toolbar class="shadow-2 rounded-borders">
+        <q-toolbar-title class="text-weight-bold text-h5">
+          Evently
+        </q-toolbar-title>
         <q-space />
 
         <!--
         notice shrink property since we are placing it
         as child of QToolbar
       -->
-        <q-tabs v-model="tab" shrink>
-          <q-tab>
-            <router-link class="text-weight-bold text-white" to="/">Home</router-link>
+        <q-tabs shrink>
+          <q-tab v-if="!this.isAuthenticated()">
+            <router-link to="/login" class="text-white text-weight-bold">
+              Login
+            </router-link>
+          </q-tab>
+          <q-tab v-if="this.isAuthenticated()">
+            <router-link
+              to="/"
+              class="text-white text-weight-bold"
+            >
+              Home
+            </router-link>
           </q-tab>
           <q-tab>
-            <router-link class="text-weight-bold text-white" to="/eventos">Eventos</router-link>
+            <router-link class="text-white text-weight-bold" to="/eventos">
+              Eventos
+            </router-link>
           </q-tab>
           <q-tab>
-            <router-link class="text-weight-bold text-white" to="/perfil">Perfil</router-link>
+            <router-link class="text-white text-weight-bold" to="/about">
+              Sobre
+            </router-link>
           </q-tab>
-          <q-tab>
-            <router-link class="text-weight-bold text-white" to="/about">Sobre</router-link>
+          <q-tab v-if="this.isAuthenticated()">
+            <router-link
+              to="/login"
+              class="text-white text-weight-bold"
+              @click.prevent="this.logout()"
+            >
+              Sair
+            </router-link>
           </q-tab>
         </q-tabs>
       </q-toolbar>
     </q-header>
 
+    <!-- CONTENT -->
     <q-page-container>
       <router-view />
     </q-page-container>
+
+    <!-- FOOTER -->
+    <!-- <q-footer elevated class="text-white bg-grey-8">
+      <q-toolbar>
+        <q-toolbar-title>
+          <q-avatar>
+            <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg" />
+          </q-avatar>
+          <div>Title</div>
+        </q-toolbar-title>
+      </q-toolbar>
+    </q-footer> -->
   </q-layout>
 </template>
 
 <script>
 import { ref } from "vue";
+import { mapGetters, mapActions } from "vuex";
 
 export default {
   name: "LayoutDefault",
@@ -43,6 +81,10 @@ export default {
     return {
       leftDrawerOpen: ref(false),
     };
+  },
+  methods: {
+    ...mapGetters(["isAuthenticated"]),
+    ...mapActions(["logout"]),
   },
 };
 </script>
