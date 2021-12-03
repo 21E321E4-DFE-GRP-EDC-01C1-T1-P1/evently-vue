@@ -95,6 +95,27 @@ export default createStore({
       });
       return response.json();
     },
+    createEvent: async ({commit}, payload) => {
+      let response = await fetch('http://localhost:4000/events', {
+        method: 'POST',
+        headers: { 
+          'Accept': '*/*',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(payload)
+      });
+      return response.json();
+    },
+    deleteEvent: async ({commit}, payload) => {
+      let response = await fetch(`http://localhost:4000/events/${payload}`, {
+        method: 'DELETE',
+        headers: { 
+          'Accept': '*/*',
+          'Content-Type': 'application/json'
+        },
+      });
+      return response.json();
+    },
   },
   modules: {},
 });

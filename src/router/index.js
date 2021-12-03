@@ -5,6 +5,7 @@ import About from "../views/About.vue";
 import Login from "../views/Login.vue";
 import Register from "../views/Register.vue";
 import CreateEvent from "../views/Eventos/Create.vue";
+import ReadEvent from "../views/Eventos/Read.vue";
 import Missing from "../views/Missing.vue";
 
 const routes = [
@@ -42,6 +43,16 @@ const routes = [
     name: "evento-novo",
     component: CreateEvent,
   },
+  {
+    path: "/eventos/:id",
+    name: "evento-read",
+    component: ReadEvent,
+  },
+  {
+    path: "/eventos/:id/editar",
+    name: "evento-edit",
+    component: CreateEvent,
+  },
   // WARNING: As rotas abaixo devem sempre ser as últimas!
   {
     path: "/:pathMatch(.*)",
@@ -63,7 +74,10 @@ const router = createRouter({
 // GUARDS
 router.beforeResolve((to, from, next) => {
   let isAuthenticated = require("../store").default.getters.isAuthenticated;
-  if (!["login", "register", "eventos", "sobre"].includes(to.name) && !isAuthenticated) {
+  if (
+    !["login", "register", "eventos", "sobre"].includes(to.name) &&
+    !isAuthenticated
+  ) {
     // Bloqueia acesso ao site caso não se esteja autenticado.
     next({ name: "login" });
   } else if (to.name == "login" && isAuthenticated) {

@@ -1,8 +1,6 @@
 <template>
   <h2 class="text-h6">
-    {{
-      this.myEvents.length ? "Eventos Inscritos" : "Inscrito em nenhum evento"
-    }}
+    {{ this.myEvents.length ? "Eventos Criados" : "Nenhum evento criado" }}
   </h2>
   <div class="container no-scrollbar">
     <template v-for="event of this.myEvents" :key="event.id">
@@ -36,9 +34,7 @@ export default {
     ...mapGetters(["user"]),
     updateEventList() {
       this.events().then((response) => {
-        this.myEvents = response.filter((e) => {
-          return e.participants.includes(this.user().id);
-        });
+        this.myEvents = response.filter((e) => e.createdBy == this.user().id);
       });
     },
   },

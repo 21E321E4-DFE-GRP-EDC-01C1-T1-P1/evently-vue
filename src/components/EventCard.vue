@@ -8,6 +8,26 @@
             Data: {{ this.day }} {{ this.month }}, {{ this.ano }}
           </div>
         </div>
+
+        <div class="col-auto">
+          <q-btn color="grey-7" round flat icon="more_vert">
+            <q-menu cover auto-close>
+              <q-list>
+                <q-item clickable @click="view(this.event.id)">
+                  <q-item-section>Ver Mais</q-item-section>
+                </q-item>
+                <template v-if="this.event.createdBy == this.user.id">
+                  <q-item clickable @click="edit(this.event.id)">
+                    <q-item-section>Editar</q-item-section>
+                  </q-item>
+                  <q-item clickable @click="deleteMe(this.event.id)">
+                    <q-item-section class="text-red-6">Deletar</q-item-section>
+                  </q-item>
+                </template>
+              </q-list>
+            </q-menu>
+          </q-btn>
+        </div>
       </div>
     </q-card-section>
 
@@ -74,31 +94,40 @@ export default {
     };
   },
   methods: {
-    ...mapActions(["subscribe", "unsubscribe"]),
+    ...mapActions(["subscribe", "unsubscribe", "deleteEvent"]),
     subMe() {
-        let response = this.subscribe({event: this.event, user: this.user});
-        if (response) {
-            this.$emit('change');
-        }
+      let response = this.subscribe({ event: this.event, user: this.user });
+      if (response) {
+        this.$emit("change");
+      }
     },
     unsubMe() {
-        let response = this.unsubscribe({event: this.event, user: this.user});
-        if (response) {
-            this.$emit('change');
-        }
+      let response = this.unsubscribe({ event: this.event, user: this.user });
+      if (response) {
+        this.$emit("change");
+      }
+    },
+    view(id) {
+      this.$router.push({ name: "evento-read", params: { id } });
+    },
+    edit(id) {
+      this.$router.push({ name: "evento-edit", params: { id } });
+    },
+    deleteMe(id) {
+      this.deleteEvent(id).then(() => this.$route.push({name: "home"}));
     },
   },
 };
 </script>
 
 <style scoped>
-.my-card {
+/* .my-card {
     width: 50%;
-}
+} */
 
 @media only screen and (max-width: 600px) {
   .my-card {
-      width: 100%;
+    width: 100%;
   }
 }
 </style>

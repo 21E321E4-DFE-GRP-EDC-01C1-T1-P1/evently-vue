@@ -6,10 +6,10 @@
 - [x] Cadastro
 - [ ] Perfil (+ Calendário)
 - [ ] Evento
-  - [ ] Create
-  - [ ] Read (+ Subscribe)
-  - [ ] Update
-  - [ ] Delete
+  - [x] Create
+  - [x] Read (+ Subscribe)
+  - [x] Update
+  - [x] Delete
   - [ ] List
 - [ ] Sobre
 
